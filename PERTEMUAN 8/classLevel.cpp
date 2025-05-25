@@ -4,16 +4,16 @@
 using namespace std;
 
 class ContohAkses {
-    private:
+    private: //pengubah akses yang menentukan bahwa anggota kelas (variabel dan fungsi) hanya dapat diakses dari dalam kelas itu sendiri
        int privateVar;
     
-    protected:
+    protected: //penentu akses yang menentukan visibilitas anggota kelas (anggota data dan fungsi)
        int protectedVar;
 
-    public:
+    public: //"access specifier", yang menentukan aksesibilitas anggota (atribut dan fungsi) kelas tersebut
        int publicVar;
 
-       // constructor
+       // constructor //metode khusus yang dipanggil secara otomatis saat objek dari suatu kelas dibuat
        ContohAkses() {
         privateVar = 1;
         protectedVar = 2;
@@ -29,7 +29,7 @@ class ContohAkses {
     }
 };
 
-// kelas turunan
+// kelas turunan //kelas yang dibuat berdasarkan kelas lain, yang disebut kelas dasar (base class) atau kelas induk (parent class)
 class Turunan : public ContohAkses {
     public:
     void aksesProtected() {

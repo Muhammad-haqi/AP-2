@@ -3,17 +3,17 @@
 #include <vector>
 using namespace std;
 
-struct Alamat {
+struct Alamat { //keyword yang digunakan untuk membuat tipe data baru yang mengelompokkan beberapa variabel terkait
     string jalan;
     string kota;
     int kodePos;
 };
 
-struct Mahasiswa{
+struct Mahasiswa{ //keyword yang digunakan untuk membuat tipe data baru yang mengelompokkan beberapa variabel terkait
     string nama;
     int umur;
     float ipk;
-    Alamat alamat; // nested struct
+    Alamat alamat; // nested struct //struktur yang didefinisikan di dalam struktur lain
 };
 
 int main () {
@@ -22,15 +22,15 @@ int main () {
 
     Mahasiswa mhs1;
 
-    // mhs1.nama = "haqi";
-    // mhs1.umur = 19;
-    // mhs1.ipk = 3.67;
+    mhs1.nama = "haqi";
+    mhs1.umur = 19;
+    mhs1.ipk = 3.67;
 
-    // mhs1.alamat.jalan = "jalan karya sepakat";
-    // mhs1.alamat.kota = "medan";
-    // mhs1.alamat.kodePos = "27715";
+    mhs1.alamat.jalan = "jalan karya sepakat";
+    mhs1.alamat.kota = "medan";
+    mhs1.alamat.kodePos = "27715";
 
-    // cout << "alamat = " << mhs1.alamat.jalan << mhs1.alamat.kota << mhs1.alamat.kodePos << endl;
+    cout << "alamat = " << mhs1.alamat.jalan << mhs1.alamat.kota << mhs1.alamat.kodePos << endl;
 
     vector<Mahasiswa> mahasiswa;
     int n;

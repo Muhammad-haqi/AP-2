@@ -3,7 +3,7 @@
 using namespace std;
 
 
-struct mahasiswa{
+struct mahasiswa{ // struct : keyword yang digunakan untuk membuat tipe data baru yang mengelompokkan beberapa variabel terkait
     string nama;
     int umur;
     float ipk;
@@ -19,9 +19,9 @@ int main() {
     mhs1.umur = 19;
     mhs1.ipk = 3.67;
 
-    // cout << "nama = " << mhs1.nama << endl;
-    // cout << "umur = " << mhs1.umur << endl;
-    // cout << "ipk = " << mhs1.ipk << endl;
+    cout << "nama = " << mhs1.nama << endl;
+    cout << "umur = " << mhs1.umur << endl;
+    cout << "ipk = " << mhs1.ipk << endl;
 
     mahasiswa *ptrmhs = &mhs1;
     cout << "nama = " << ptrmhs -> nama << endl;
